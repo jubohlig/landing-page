@@ -6,14 +6,22 @@ body {
 .header {
     background-color: #1F2937;
     display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.content {
+    max-width: 1400px;
+    display: flex;
     flex-direction: column;
-    padding: 20px 50px;
 }
 
 .navigation {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    margin-bottom: 100px;
+
 }
 
 .header-logo {
@@ -21,14 +29,42 @@ body {
     font-size: 24px;
 }
 
+.hero {
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 100px;
+}
+
+.hero-headline {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+
+.hero-copy, a, button {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.hero-copy {
+    margin-bottom: 18px;
+}
+
 ul {
     list-style: none;
     display: flex;
-    gap: 16px;
+    gap: 24px;
 }
 
 a {
-    font-size: 18px;
-    color: #E5E7EB;
     text-decoration: none;
+}
+
+button {
+    background-color: #3882F6;
+    padding: 8px 30px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
 }
